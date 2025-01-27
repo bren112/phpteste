@@ -72,6 +72,9 @@ body {
 }
 #cont{
     width: 25pc;
+    animation: logoAnimation 1.5s ease-out forwards; /* Animação com tempo de 1.5 segundos */
+    animation-delay: 1.5s;
+    
 }
 
 
