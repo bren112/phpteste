@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Animação da cambalhota */
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotateX(180deg); /* Começa com opacidade 0, deslocamento para baixo e rotação */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-20px) rotateX(0deg); /* Meio da animação, logo gira até a posição normal */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg); /* Finaliza sem rotação, no topo */
+    }
+}
+
+#logo {
+    width: 19pc;
+    animation: logoAnimation 1.5s ease-out forwards; /* Animação com tempo de 1.5 segundos */
+    animation-delay: 1.5s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+    color: #333;
+    text-align: center;
+}
+@keyframes containerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Finaliza na posição normal */
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    animation: containerAnimation 1.5s ease-out forwards; /* Animação do container */
+}
+.container_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2pc;
+}
+
+.container h1{
+
+        font-family: "Belanosima", serif;
+        font-weight: 200;
+        font-style: normal;
+       
+        font-size: 1.2pc;
+   
+        color: rgb(193, 191, 191);
+      
+}
+#cont{
+    width: 25pc;
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e07a00;
+}
+
+/* Botão de já paguei */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

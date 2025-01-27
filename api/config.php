@@ -1,0 +1,3 @@
+<?php
+
+return ['accesstoken' => 'APP_USR-6628085664452409-012710-9be3f36b0a383a8f6fdc705736c66d76-536473269'];
